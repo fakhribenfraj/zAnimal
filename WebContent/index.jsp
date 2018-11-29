@@ -11,19 +11,25 @@
     <script src="bootstrap/js/bootstrap4.js"></script>
   </head>
   <body>
-  	<div class="header container-fluid">
-  		<a>
-  			<div >
-  				<img alt="logo" src="bootstrap/images/cat-icon.png">
-  				<h1 class="center-vertical">zAnimal</h1>
-  			</div>
-  		</a>
-  		<form class="form-inline my-2 my-lg-0 justify-content-end fixed-bottom">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
-	    </form>
+  <div class="container-fluid">
+  	<div class="header container-fluid ">
+	  	<div class="row">
+	  		<a class="col-md-3">
+	  			<div>
+	  				<img alt="logo" src="bootstrap/images/cat-icon.png">
+	  				<h1 class="center-vertical">zAnimal</h1>
+	  			</div>
+  			</a>
+	  		<div class="col-md-5 offset-md-4 center-vertical">
+	  			<form class="form-inline my-2 my-lg-0 ">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+			    </form>
+	  		</div>
+	  	</div>
+  		
   	</div>
-    <nav class="navbar navbar-expand-lg navbar-light mb-3">
+    <nav class="navbar navbar-expand-lg navbar-light mb-3 bg-zanimal">
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent bg-zanimal">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
@@ -46,9 +52,18 @@
 	</nav>
 	<div class="row">
 		<aside class="col-md-4 container">
-	      <div class="img-thumbnail col-md-10 col-md-offset-1">
+	      <div class="col-md-10 col-md-offset-1 img-thumbnail">
 	        <a href="product.html">
-				<figure class="figure">
+				<figure class="figure ">
+				  <img src="bootstrap/images/dog.jpg" class="figure-img rounded" style="width:100%;" alt="product">
+				  <h4 class="figure-caption ">Sample</h4>
+				  <h4 class="figure-caption text-right">$100</h4>
+				</figure>
+	        </a> 
+	      </div>
+	      <div class="col-md-10 col-md-offset-1 img-thumbnail">
+	        <a href="product.html">
+				<figure class="figure ">
 				  <img src="bootstrap/images/dog.jpg" class="figure-img rounded" style="width:100%;" alt="product">
 				  <h4 class="figure-caption ">Sample</h4>
 				  <h4 class="figure-caption text-right">$100</h4>
@@ -134,5 +149,7 @@
       </div>
       
     </div>
+  </div>
+  	
   </body>
 </html>
