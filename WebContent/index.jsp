@@ -6,87 +6,94 @@
     <meta charset="utf-8">
     <title>zAnimal</title>
     <link rel="stylesheet" href="bootstrap/css/zAnimal.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap4.css">
+    <script src="bootstrap/js/jquery3.js"></script>
+    <script src="bootstrap/js/bootstrap4.js"></script>
   </head>
   <body>
-  	<div class="header">
-  		<a >
-	  		<div class="feature_image">
-	  			<img alt="logo" src="bootstrap/images/cat-icon.png">
-	  			<h1>zAnimal</h1>
-	  		</div>
-  			
+  	<div class="header container-fluid">
+  		<a>
+  			<div >
+  				<img alt="logo" src="bootstrap/images/cat-icon.png">
+  				<h1 class="center-vertical">zAnimal</h1>
+  			</div>
   		</a>
-  		 	</div>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">e-commerce</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Software</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-    <aside class="col-md-4">
-      <div class="thumbnail col-md-10 col-md-offset-1">
-        <a href="product.html">
-            <img src="bootstrap/images/dog.jpg" alt="product" style="width:100%" >
-            <div class="caption">
-              <h4 class="pull-right">$100</h4>
-              <h4><a href="product.html">Sample dog</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-            </div>
-        </a> 
-      </div>
+  		<form class="form-inline my-2 my-lg-0 justify-content-end fixed-bottom">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+  	</div>
+    <nav class="navbar navbar-expand-lg navbar-light mb-3">
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent bg-zanimal">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Dogs</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Cats</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Fish</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Birds</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<div class="row">
+		<aside class="col-md-4 container">
+	      <div class="img-thumbnail col-md-10 col-md-offset-1">
+	        <a href="product.html">
+				<figure class="figure">
+				  <img src="bootstrap/images/dog.jpg" class="figure-img rounded" style="width:100%;" alt="product">
+				  <h4 class="figure-caption ">Sample</h4>
+				  <h4 class="figure-caption text-right">$100</h4>
+				</figure>
+	        </a> 
+	      </div>
     </aside>
     <header class="col-md-8">
-      <div id="myCarousel" style="margin-bottom: 50px;" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="bootstrap/images/dog.jpg" alt="Los Angeles">
-          </div>
-      
-          <div class="item">
-            <img src="bootstrap/images/dog.jpg" alt="Chicago">
-          </div>
-      
-          <div class="item">
-            <img src="bootstrap/images/dog.jpg" alt="New York">
-          </div>
-        </div>
-      
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img class="d-block w-100" src="bootstrap/images/dog.jpg" alt="First slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="bootstrap/images/dog.jpg" alt="Second slide">
+		    </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="bootstrap/images/dog.jpg" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
     </header>
+	</div>
+   
     <div class="container">
       <div class="page-header">
         <h3 class="text-center">All Products</h3>
       </div>
-      <div class="col-md-4">
+      <div	class="row">
+      	<div class="col-md-4">
         <div class="thumbnail">
-          <img src="images/dog.jpg" alt="product" style="width:100%">
+          <img src="bootstrap/images/dog.jpg" alt="product" style="width:100%">
           <div class="caption">
             <h4 class="pull-right">$100</h4>
             <h4><a href="#">Sample dog</a></h4>
@@ -96,7 +103,7 @@
       </div>
       <div class="col-md-4">
         <div class="thumbnail">
-          <img src="images/dog.jpg" alt="product" style="width:100%">
+          <img src="bootstrap/images/dog.jpg" alt="product" style="width:100%">
           <div class="caption">
             <h4 class="pull-right">$100</h4>
             <h4><a href="#">Sample dog</a></h4>
@@ -106,17 +113,18 @@
       </div>
       <div class="col-md-4">
         <div class="thumbnail">
-          <img src="images/dog.jpg" alt="product" style="width:100%">
+          <img src="bootstrap/images/dog.jpg" alt="product" style="width:100%">
           <div class="caption">
             <h4 class="pull-right">$100</h4>
             <h4><a href="#">Sample dog</a></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
           </div>
         </div>
+      </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail">
-          <img src="images/dog.jpg" alt="product" style="width:100%">
+          <img src="bootstrap/images/dog.jpg" alt="product" style="width:100%">
           <div class="caption">
             <h4 class="pull-right">$100</h4>
             <h4><a href="#">Sample dog</a></h4>
@@ -124,6 +132,7 @@
           </div>
         </div>
       </div>
+      
     </div>
   </body>
 </html>
